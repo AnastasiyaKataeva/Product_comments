@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Добавить комментарий</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <div>
+        <h3>Добавить отзыв</h3>
+        <form id="add-comment">
+            <div>
+                <label for="product">Товар</label>
+            </div>
+            <div>
+                <input type="text" id="product" size="100" />
+            </div>
+            <div>
+                <label for="comment">Оставить отзыв</label>
+            </div>
+            <div>
+                <textarea id="comment" rows="10" cols="100"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Сохраить отзыв" />
+            </div>
+        </form>
+
+        <div>
+            <h4>Список товаров:</h4>
+            <div id="products"></div>
+        </div>
+
+        <script src="storage.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
